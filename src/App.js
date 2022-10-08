@@ -13,12 +13,12 @@ function App() {
   return (
     <div className={`d-flex flex-column ${styles.appContainer}`}>
       <Header />
-      { {navigation.state === "loading" && (
+      {navigation.state === 'loading' && (
         <h1>
-          Loading{" "}
-          {navigation.location.pathname === "/" && <strong>Homepage</strong>}{" "}
+          Loading{' '}
+          {navigation.location.pathname === '/' && <strong>Homepage</strong>}{' '}
         </h1>
-      )}}
+      )}
       <div className="flex-fill">
         <Outlet />
       </div>
