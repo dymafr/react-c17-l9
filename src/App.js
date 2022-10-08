@@ -10,6 +10,7 @@ function App() {
   useEffect(() => {
     console.log(navigation);
   }, [navigation]);
+
   return (
     <div className={`d-flex flex-column ${styles.appContainer}`}>
       <Header />
